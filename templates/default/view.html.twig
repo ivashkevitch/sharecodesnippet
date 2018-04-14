@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div style="font-size: x-large">
+        Link to this code: <a class="text-light" style="text-decoration: underline" href="/{{ id }}">https://sharecodesnippet.com/{{ id }}</a>
+    </div>
+    <div class="py-3">
+        <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+        <script src="//yastatic.net/share2/share.js"></script>
+        <div class="ya-share2" data-services="facebook,gplus,twitter,blogger,vkontakte,delicious,digg,reddit,evernote,linkedin,lj,pocket,tumblr,viber,whatsapp,skype,telegram,odnoklassniki"></div>
+    </div>
+    <div class="text-left py-3">
+        <pre><code class="hljs">{{ text }}</code></pre>
+    </div>
+{% endblock %}
